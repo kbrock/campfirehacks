@@ -2,15 +2,27 @@
 em { color:red; }
 pre { border: solid 1px #666; margin: 20px}
 </style>
+
+<h1>Campfire hack</h1>
+
 <ol>
   <li>Create a site specific browser for campfire</li>
-  <li>edit <code>/Applications/Campfire.app/Contents/Resources/default.css</code></li>
+  <li>Edit <code>/Applications/Campfire.app/Contents/Resources/default.css</code></li>
+  <li>Configure to allow it to download the file</li>
+  <li>Restart</li>
+  <li>Enjoy</li>
 </ol>
+
+<h2>Edit <code>default.css</code></h2>
 <pre><code><b>@import url("http://campfirehacks.local/sheets/<em>twitterid</em>.css");</b>
 textarea {resize:both;-webkit-dashboard-region:dashboard-region(control rectangle);}
 button {-webkit-dashboard-region:dashboard-region(control rectangle);}
 input {-webkit-dashboard-region:dashboard-region(control rectangle);}</code></pre>
 
-<p>Enjoy:</p>
+<h2>Configure it</h2>
+
+<p><img src="/images/ssb_advanced_preferences.jpg"></p>
+
+<h2>Enjoy:</h2>
 <p><img src="/images/screenshot_icons.jpg"></p>
 <p><img src="/images/screenshot_right.png"></p>
