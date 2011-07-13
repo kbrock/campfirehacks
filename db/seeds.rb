@@ -23,6 +23,8 @@ Avatar.create  :username => 'wpeterson', :campfire => 611035, :image_url => 'htt
 
 #Avatar.create :username => 'monkeyatlarge', :campfire => xxx, :image_url => 'http://a0.twimg.com/profile_images/55020500/jamesbuddyicon_normal.png'
 #Avatar.create :username => 'jeff_cole', :campfire => xxx, :image_url => 'http://a0.twimg.com/profile_images/51990889/jeff_subway_normal.jpg'
+Avatar.create :username => 'devittles ', :campfire => 877449, :image_url => 'http://a2.twimg.com/profile_images/66514222/devittles-avatar-7894_large_normal.png'
+Avatar.create :username => 'letwittimate', :campfire => 877448, :umage_url => 'http://a0.twimg.com/profile_images/1165521553/1_normal.jpg'
 
 Component.create :display_name => 'Conference Call', :css_class => 'conference_control'
 Component.create :display_name => 'Guest Access', :css_class => 'guest_access_control'
