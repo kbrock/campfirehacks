@@ -7,6 +7,6 @@ gem 'rails', '3.0.9'
 
 gem 'pg'
 
-gem 'thin'
+gem 'thin', :group => :production
 
 #gem 'heroku', :group => :development
