@@ -47,5 +47,6 @@ create_component :display_name => 'Locking Control', :css_class => 'locking_cont
 create_component :display_name => 'Latest 5 files', :css_class => 'files'
 create_component :display_name => 'Launchbar', :css_class => 'launchbar'
 create_component :display_name => 'Corner Logo', :css_class => 'corner_logo'
+create_component :display_name => 'Narrow Screen', :css_class => 'narrow'
 
 #Component.create :display_name => 'Growl Config', :css_class => 'growl_config_div'
