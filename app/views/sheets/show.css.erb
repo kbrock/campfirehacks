@@ -1,9 +1,10 @@
 <% @components.each do |comp| -%>
-/* <%= comp.display_name %> */
+/* <%= comp.display_name %> Component*/
 #<%=comp.css_class%> { display:none;}
-<% end -%>
 
-<%if @components.detect {|c| c.css_class == 'launchbar'} %>
+<% end -%>
+<% if @components.detect {|c| c.css_class == 'launchbar'} %>
+/* Launchbar Component*/
 body.chat.with_launchbar div#Header {top:0px !important}
 body.chat.with_launchbar div#Sidebar {top:55px !important}
 <% end -%>
