@@ -30,9 +30,21 @@ body.chat.with_launchbar #Sidebar:hover {
   height: 400px !important;
 }
 div#Wrapper {
-  padding: 0 0 0 30px;
+  padding: 0 0 0 30px !important;
 }
 
+/* Input Component */
+#chat_controls {
+  display:none;
+}
+
+.speak #chat_form {
+  width: 100%;
+}
+
+.speak #chat_form td {
+  pading-right: 0px;
+}
 <% end -%>
 
 /* this block screws up those that are display none (the multi line ones) */
