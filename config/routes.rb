@@ -1,5 +1,8 @@
 Campfirehacks::Application.routes.draw do
   resources :sheets
+  match 'scripts/:id.user.js' => 'scripts#show', :format => 'js'
+  match 'scripts/:id.js' => 'scripts#show', :format => 'js'
+
   root :to => 'welcome#index'
   # The priority is based upon order of creation:
   # first created -> highest priority.
