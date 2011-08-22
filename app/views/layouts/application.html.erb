@@ -5,6 +5,17 @@
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
+  <style>
+  em { color:red; }
+  pre { border: solid 1px #666; margin: 20px}
+  </style>
+  <script type="text/javascript">
+  function install_plugin() {
+    var twitter_id = document.getElementById('twitter_id').value;
+    window.open("http://<%=domain_name%>/scripts/"+twitter_id+".user.js");
+    return false;
+  }
+  </script>
 </head>
 <body>
 

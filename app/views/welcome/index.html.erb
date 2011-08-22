@@ -1,28 +1,17 @@
-<style>
-em { color:red; }
-pre { border: solid 1px #666; margin: 20px}
-</style>
-
-<p><img src="/images/screenshot_wide.jpg"> <img src="/images/screenshot_righthand.jpg"></p>
+<p><img src="/images/screenshot_wide.jpg"></p>
 <h1>Campfire hack</h1>
-
-<ol>
-  <li>Create a site specific browser for campfire</li>
-  <li>Tell campfire that viewing the user scripts is ok
-    <ul>
-      <li>Go into Preferences (command-comma)</li>
-      <li>Go to 'Advanced Preferences tab</li>
-      <li>if you use 'browsing to URLs matching these patterns', then add "*campfirehacks*"</li>
-      <li>Close</li>
-    </ul>
-  </li>
-  <li>Toggle the toolbar to allow you to enter urls: option-command-T</li>
-  <li>Create a new tab: command-T</li>
-  <li>Copy paste your url: http://<%=domain_name%>/scripts/&lt;<span style="color:#f00;">twitter_id</span>&gt;.user.js</li>
-  <li>Click yes, please install and take over my computer</li>
-  <li>Refresh the page: command-R</li>
-  <li>Enjoy</li>
-</ol>
-<h2>preferences</h2>
+<p>2 steps to a prettier campfire</p>
+<hr />
+<h2>Step 1</h2>
+<p>Within your campfire app, Go to 'Advanced Preferences' tab.</p>
+<p>add "*campfirehacks*" under 'browsing to URLs'</p>
 <p><img src="/images/ssb_advanced_preferences.jpg"></p>
+<h2>Step 2</h2>
+  <form>
+    <label for='twitter_id'>Twitter id:
+    <input type='text' id='twitter_id' name='twitter_id'>
+    </label>
+    <input type='button' value='install' onclick='install_plugin();'>
+  </form>
+<h2>Refresh</h2>
 
