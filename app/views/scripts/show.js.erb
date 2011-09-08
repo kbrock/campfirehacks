@@ -23,3 +23,5 @@
     document.getElementsByTagName("head")[0].appendChild(fileref)
   };
   loadjscssfile("http://<%=domain_name%>/sheets/<%=@id%>.css", "css")
+
+$('chat_controls').insert({after:"<button onclick=\"$$('#chat tr').each(function(e) { e.remove();});\">clear</button>"});
