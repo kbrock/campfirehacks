@@ -1,0 +1,16 @@
+// ==UserScript==
+// @name          Campfire hacks for our company
+// @namespace     http://campfirehacks.heroku.com/
+// @description   Slim down all that clutter
+// @author        Keenan Brock
+// @homepage      http://reflectivepixel.com/
+// @include       *.campfirenow.com/room*
+// ==/UserScript==
+
+$('link').last.insert({after:"<style>
+<%= render :partial => 'sheets/display.css' %>
+<%= render :partial => 'avatars/missing_avatar.css' %>
+<%= render :partial => 'avatars/avatar.css', :collection => @avatars %>
+</style>"})
+$('chat_controls').insert({after:"<button onclick=\"$$('#chat tr').each(function(e) { e.remove();});\">clear</button>"});
+
