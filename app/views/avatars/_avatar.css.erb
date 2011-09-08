@@ -1,0 +1,6 @@
+/* icon: <%=avatar.username%> */
+table.chat tr.user_<%=avatar.campfire%> td.person span.author<%= ", table.chat tr.you td.person span.author" if @me == avatar%> { background-image: url(<%= avatar.image_url%>); }
+<% if avatar.important %>
+.user_<%= avatar.campfire %> td.body div.body { font-style: italic; font-weight: bold; } 
+.user_<%= avatar.campfire %> td.body div.body a { font-weight: normal; }
+<% end -%>

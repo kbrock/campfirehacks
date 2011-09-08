@@ -1,0 +1,51 @@
+<% @components.each do |comp| -%>
+/* <%= comp.display_name %> Component*/
+#<%=comp.css_class%> { display:none;}
+
+<% end -%>
+<% if @components.detect {|c| c.css_class == 'launchbar'} %>
+/* Launchbar Component*/
+body.chat.with_launchbar div#Header {top:0px !important}
+/* this will be moved by other plugins
+body.chat.with_launchbar div#Sidebar {top:55px !important}
+*/
+
+<% end -%>
+<% if @components.detect {|c| c.css_class == 'narrow'} %>
+/* Narrow Component*/
+.Left, .speak {
+  width: 100% !important;
+}
+
+#room_title h1 {
+  font-size: 14px !important;
+}
+body.chat div#Header {top:0px !important}
+body.chat div#Sidebar {
+  height: 16px !important;
+  padding: 4px !important;
+  border: 1px solid #000;
+  background: #666;
+  right: 10px !important;
+  top: 30px !important;
+}
+body.chat #Sidebar:hover {
+  height: 400px !important;
+}
+div#Wrapper {
+  padding: 0 0 0 30px !important;
+}
+
+/* Input Component */
+#chat_controls {
+  display:none;
+}
+
+.speak #chat_form {
+  width: 100%;
+}
+
+.speak #chat_form td {
+  pading-right: 0px;
+}
+<% end -%>
