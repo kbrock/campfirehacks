@@ -38,6 +38,8 @@ create_avatar  :username => 'wpeterson', :campfire => 611035, :image_url => 'htt
 create_avatar  :username => 'devittles ', :campfire => 877449, :image_url => 'http://a2.twimg.com/profile_images/66514222/devittles-avatar-7894_large_normal.png'
 create_avatar  :username => 'letwittimate', :campfire => 877448, :image_url => 'http://a0.twimg.com/profile_images/1165521553/1_normal.jpg'
 
+create_avatar :username => 'paulwicks', :campfire => 300257, :image_url => 'http://a3.twimg.com/profile_images/51828242/Paul_MRI_Saggital_normal.jpg'
+create_avatar :username => 'nikirikou', :campfire => 1033616, :image_url => 'http://a0.twimg.com/profile_images/1384157420/kirikou_visuel_normal.jpg'
 #Avatar.create :username => 'monkeyatlarge', :campfire => xxx, :image_url => 'http://a0.twimg.com/profile_images/55020500/jamesbuddyicon_normal.png'
 #Avatar.create :username => 'jeff_cole', :campfire => xxx, :image_url => 'http://a0.twimg.com/profile_images/51990889/jeff_subway_normal.jpg'
 
