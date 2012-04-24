@@ -13,7 +13,7 @@ class Avatar < ActiveRecord::Base
       puts "existing with campfire #{avatar}"
       avatar
     else
-      timage_url ||= twitter_image(twitter)
+      image_url ||= twitter_image(twitter)
       Avatar.create(options.merge(:campfire => campfire, :username => twitter, :image_url => image_url))
     end
   end
