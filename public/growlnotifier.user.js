@@ -12,8 +12,9 @@ if ( typeof(Campfire) != "undefined" )
 {
 
   function setCookie(name, value, days) { 
-    expire_str = days ? ";expires="+(new Date(new Date().getTime() + days*24*60*60*1000)).toGMTString() : ""
-    document.cookie = (name + "=" + escape(value)) + (expire_str); 
+    var expire_str = days ? ";expires="+(new Date(new Date().getTime() + days*24*60*60*1000)).toGMTString() : ""
+    var value=(name + "=" + escape(value)) + (expire_str);
+    document.cookie = value;
   }
   function getCookie(name) {
     var theCookie;
@@ -60,7 +61,7 @@ if ( typeof(Campfire) != "undefined" )
         
     },
     matchesTrigger: function(message) {
-      matcher = this.room_settings.get("trigger").strip();
+      var matcher = this.room_settings.get("trigger").strip();
       if (matcher.empty()) return false
       if (contents = /^\/(.+)\/([a-z]*)$/i.exec(matcher))
         matcher = new RegExp(contents[1], contents[2]);
@@ -76,7 +77,7 @@ if ( typeof(Campfire) != "undefined" )
     },
     sendMessage: function(title, name, message) {
       if (! this.growlFor(message)) return false; 
-      alert_message = new String(name + ": " + message).stripHTML();
+      var alert_message = new String(name + ": " + message).stripHTML();
       fluid.showGrowlNotification({
         title: title,
         description: alert_message,
