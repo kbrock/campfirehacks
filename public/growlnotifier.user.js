@@ -25,7 +25,7 @@ if ( typeof(Campfire) != "undefined" )
         theCookie= unescape(parts[1]);
       }
     });
-    return theCookie.first ? theCookie.first() : null;
+    return theCookie.first ? theCookie.first() : theCookie;
   }
 
   function notifyError(e)
@@ -118,9 +118,10 @@ if ( typeof(Campfire) != "undefined" )
       setCookie("growl_settings_" + this.room_id, JSON.stringify(this.room_settings), 14);
     },
     loadRoomSettings: function() {
+      var serialized_settings;
       if (serialized_settings = getCookie("growl_settings_" + this.room_id))
       {
-        eval("this.room_settings = $H(" + JSON.parse(serialized_settings) + ");");   
+        eval("this.room_settings = $H(" + serialized_settings + ");");
       }  
       else {
         this.room_settings = $H({
