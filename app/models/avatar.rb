@@ -9,7 +9,7 @@ class Avatar < ActiveRecord::Base
   end
 
   def self.quick(twitter, campfire, image_url=nil, options={})
-    if unique && (avatar = Avatar.find_by_username(twitter))
+    if (avatar = Avatar.find_by_username(twitter))
       puts "existing with campfire #{avatar}"
       avatar
     else
