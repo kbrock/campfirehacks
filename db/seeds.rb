@@ -14,34 +14,37 @@ def create_component(options)
   create_unique(Component,:css_class, options)
 end
 
-create_avatar  :username => 'notify', :campfire => 674538, :image_url => 'http://imgur.com/AsLqH.png', :important => true
-create_avatar  :username => 'git', :campfire => 420683 , :image_url => 'http://a3.twimg.com/profile_images/72335082/2776359417_fa33869cd0_o_normal.png'
-create_avatar  :username => 'adarowski', :campfire => 497207 , :image_url => 'http://a0.twimg.com/profile_images/1301875484/205645_10150236803629152_544839151_9236371_7431142_n_normal.jpeg'
-create_avatar  :username => 'amynewell', :campfire => 718348 , :image_url => 'http://a3.twimg.com/profile_images/82352745/amy_by_ari_normal.jpg'
-create_avatar  :username => 'mister20', :campfire => 319411 , :image_url => 'http://a1.twimg.com/profile_images/1376383275/user_18700-full_normal.jpg'
-create_avatar  :username => 'panentheos', :campfire => 803905 , :image_url => 'http://tech.patientslikeme.com/wp-content/uploads/2011/02/brett.png'
-create_avatar  :username => 'chrisbrewha', :campfire => 844722 , :image_url => 'http://tech.patientslikeme.com/wp-content/uploads/2011/03/brewer.jpg'
-create_avatar  :username => 'fakecolinsnyder', :campfire => 723728 , :image_url => 'http://a1.twimg.com/profile_images/1241278064/Screen_shot_2011-02-11_at_10.39.47_AM_normal.png'
-create_avatar  :username => 'knick44', :campfire => 97262 , :image_url => 'http://a1.twimg.com/profile_images/51448898/weemee_normal.JPG'
-create_avatar  :username => 'dougMarttila', :campfire => 614691 , :image_url => 'http://a1.twimg.com/profile_images/1201054566/dougPhoto_2_normal.jpg'
-create_avatar  :username => 'jdwyah', :campfire => 303846 , :image_url => 'http://a0.twimg.com/profile_images/52473016/profile2_normal.jpg'
-create_avatar  :username => 'semanticart', :campfire => 628026 , :image_url => 'http://a3.twimg.com/profile_images/1359184711/Screen_shot_2011-05-16_at_9.15.04_PM_normal.png'
-create_avatar  :username => 'joerodriguez', :campfire => 899927 , :image_url => 'http://a1.twimg.com/profile_images/75834218/n575683589_1343598_1804_normal.jpg'
-create_avatar  :username => 'kbrigham', :campfire => 239739 , :image_url => 'http://a2.twimg.com/profile_images/52016632/KW_by_JDB_normal.jpg'
-create_avatar  :username => 'kbrock', :campfire => 675940 , :image_url => 'http://a3.twimg.com/profile_images/1346535527/kb3_normal.jpg'
-create_avatar  :username => 'hal678', :campfire => 695254 , :image_url => 'http://a1.twimg.com/profile_images/1111509567/mikowitz_normal.png'
-create_avatar  :username => 'mo_faux', :campfire => 484642 , :image_url => 'http://a1.twimg.com/profile_images/1214250433/headshot2_normal.jpg'
-create_avatar  :username => 'scottlistfield', :campfire => 259515 , :image_url => 'http://a1.twimg.com/profile_images/52369975/scott1_normal.jpg'
-create_avatar  :username => 'shammond42', :campfire => 97261 , :image_url => 'http://a0.twimg.com/profile_images/1232628394/avatar-body-s_normal.png'
-create_avatar  :username => 'thegreatape', :campfire => 926046 , :image_url => 'http://a3.twimg.com/profile_images/1366371084/IMG_2181_normal.jpg'
-create_avatar  :username => 'wpeterson', :campfire => 611035, :image_url => 'http://a3.twimg.com/profile_images/1170560146/WinfieldPEI-face_normal.jpg'
-create_avatar  :username => 'devittles ', :campfire => 877449, :image_url => 'http://a2.twimg.com/profile_images/66514222/devittles-avatar-7894_large_normal.png'
-create_avatar  :username => 'letwittimate', :campfire => 877448, :image_url => 'http://a0.twimg.com/profile_images/1165521553/1_normal.jpg'
-
-create_avatar :username => 'paulwicks', :campfire => 300257, :image_url => 'http://a3.twimg.com/profile_images/51828242/Paul_MRI_Saggital_normal.jpg'
-create_avatar :username => 'nikirikou', :campfire => 1033616, :image_url => 'http://a0.twimg.com/profile_images/1384157420/kirikou_visuel_normal.jpg'
+Avatar.quick 'notify', :campfire => 674538, 'http://imgur.com/AsLqH.png', :important => true
+Avatar.quick 'git', :campfire => 420683
+Avatar.quick 'adarowski', :campfire => 497207
+Avatar.quick 'amynewell', :campfire => 718348
+Avatar.quick 'mister20', :campfire => 319411
+Avatar.quick 'panentheos', :campfire => 803905
+Avatar.quick 'chrisbrewha', :campfire => 844722 
+Avatar.quick 'fakecolinsnyder', :campfire => 723728
+Avatar.quick 'knick44', :campfire => 97262
+Avatar.quick 'dougMarttila', :campfire => 614691
+Avatar.quick 'jdwyah', :campfire => 303846
+Avatar.quick 'semanticart', :campfire => 628026
+Avatar.quick 'joerodriguez', :campfire => 899927
+Avatar.quick 'kbrigham', :campfire => 239739
+Avatar.quick 'kbrock', :campfire => 675940
+Avatar.quick 'hal678', :campfire => 695254
+Avatar.quick 'mo_faux', :campfire => 484642
+Avatar.quick 'scottlistfield', :campfire => 259515
+Avatar.quick 'shammond42', :campfire => 97261
+Avatar.quick 'thegreatape', :campfire => 926046
+Avatar.quick 'wpeterson', :campfire => 611035
+Avatar.quick 'devittles ', :campfire => 877449
+Avatar.quick 'letwittimate', :campfire => 877448
+Avatar.quick 'paulwicks', :campfire => 300257
+Avatar.quick 'nikirikou', :campfire => 1033616
+Avatar.quick 'jeff_cole', :campfire => 91734
+Avatar.quick 'shivzb', :campfire => 1071088
+Avatar.quick 'br1anb0yle', 1146518
+Avatar.where("username like '%shi%'").first.update_attributes(:campfire => "1071088")
 #Avatar.create :username => 'monkeyatlarge', :campfire => xxx, :image_url => 'http://a0.twimg.com/profile_images/55020500/jamesbuddyicon_normal.png'
-#Avatar.create :username => 'jeff_cole', :campfire => xxx, :image_url => 'http://a0.twimg.com/profile_images/51990889/jeff_subway_normal.jpg'
+Avatar.quick 'shivzb', 455538515
 
 create_component :display_name => 'Conference Call', :css_class => 'conference_control'
 create_component :display_name => 'Guest Access', :css_class => 'guest_access_control'
